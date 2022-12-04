@@ -1,0 +1,27 @@
+.option_box{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option_box_btn{
+    border: 1px solid var(--purple-t);
+    width: min(95%, 342px);
+    height: 60px;
+    border-radius: 6px;
+
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option_box_btn a{
+    text-decoration: none;
+    color: var(--purple-t);
+    font-weight: bold;
+    text-align: center;
+}

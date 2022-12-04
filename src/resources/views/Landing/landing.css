@@ -1,0 +1,48 @@
+.landing_box {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    height: 100vh;
+    padding: 1.6rem 0;
+    overflow-y: scroll;
+
+    background: var(--purple);
+}
+
+.init_box {
+    scroll-snap-align: start;
+    height: 100vh;
+
+    background: var(--purple);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: left .8s;
+}
+
+.init_box_logo {
+    margin-bottom: 70px;
+}
+
+.init_box_subtitle {
+    width: 318px;
+    text-align: center;
+    color: var(--purple-overshadowed);
+    font-size: 18px;
+    margin-top: 1.5rem;
+}
+
+.init_box_subtitle.contri {
+    font-size: 14px;
+}
+
+.init_box_subtitle.contri svg {
+    margin-left: .3rem;
+}
+
+.init_box_opt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

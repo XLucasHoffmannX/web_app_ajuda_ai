@@ -1,0 +1,82 @@
+.satisfaction_box{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_provider{
+    width: min(95%, 500px);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.controllerForm label, select{
+    color: var(--grey-secondary-font);
+}
+
+.controllerForm .field{
+    text-align: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.rating{
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MuiRating-root{
+    width: 100% !important;
+    height: 100% !important;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MuiRating-label{
+    font-size: 42px;
+    margin-left: 1rem;
+}
+
+.box_list{
+    margin: 1rem 0;
+
+    border-radius: 6px;
+
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    color: var(--grey-secondary-font);
+    padding: 1rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.box_list_start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.box_list_start svg{
+    font-size: 28px;
+    color: var(--yellow);
+    margin-right: .5rem;
+}
+
+.box_provider .realized{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

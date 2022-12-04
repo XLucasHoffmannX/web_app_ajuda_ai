@@ -1,0 +1,130 @@
+.best_search_box {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search_e1, .search_e2{
+    width: min(95%, 500px);
+    box-shadow: 0px 9px 14px rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--purple-t);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.search_e1 h2{
+    text-align: left;
+    color: var(--black);
+}
+
+.controllerForm label, select{
+    color: var(--grey-secondary-font);
+}
+
+/* search_e2 */
+.search_e2 h2{
+    font-size: 18px;
+    text-align: center;
+    color: var(--title);
+    font-weight: 600;
+}
+
+.search_e2_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.search_e2_info h2{
+    font-size: 16px;
+    color: var(--black);
+    margin-top: 1rem;
+}
+
+.result_control{
+    display: flex;
+    align-items: center;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: .5rem;
+    color: var(--grey-secondary-font);
+}
+
+.all_devices{
+    border: 1px solid var(--purple-t);
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.all_devices a{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: var(--purple-t) !important;
+    width: 100%;
+}
+
+.btn_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_primary_box {
+    width: min(100%, 342px);
+    height: 4rem;
+    border-radius: 6px;
+}
+
+.btn_primary_box span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btn_primary_box a {
+    text-decoration: none;
+    color: var(--white) !important;
+}
+
+.btn_primary_box:hover {
+    transform: scale(1.012);
+}
+
+.btn_primary_box button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--green);
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--white) !important;
+}

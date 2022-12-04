@@ -1,0 +1,61 @@
+.container_app {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    height: 100vh;
+    padding: 1.6rem 0;
+    overflow-y: scroll;
+
+    background: var(--white-secondary);
+}
+
+.container_init_app {
+    scroll-snap-align: start;
+    height: 100vh;
+
+    background: var(--white-secondary);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* container_init_app_header */
+.container_init_app_header{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.container_init_app_header svg{
+    margin: 0 .6rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color : var(--title);
+}
+
+.container_init_app_header span{
+    font-size: 22px;
+    color : var(--title);
+    font-weight: bold;
+}
+
+/* container_init_app_main */
+.container_init_app_main{
+    width: 100vw;
+    flex: 1;
+    overflow-y: scroll;
+    animation: up .5s;
+}
+
+/* container_init_app_footer */
+.container_init_app_footer{
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+

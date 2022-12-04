@@ -21,7 +21,7 @@ export default function Landing() {
                             </Link>
                         </div>
                         <span className='init_box_subtitle mt-4 contri'>
-                            Mais de 100 pessoas contribuidas
+                            Pra auxiliar pessoas em seu roteador
                             <FaHeart />
                         </span>
                     </div>

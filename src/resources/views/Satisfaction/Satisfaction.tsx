@@ -42,7 +42,7 @@ export default function Satisfaction() {
 		e.preventDefault();
 
 		if (token) {
-			axios.post('http://192.168.0.114:3040/api/provider', {
+			axios.post('https://me-ajuda-ai.herokuapp.com/api/provider', {
 				client_id: token,
 				provider: String(info.provider).toLowerCase(),
 				plan: info.plan,

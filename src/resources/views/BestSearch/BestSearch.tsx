@@ -20,20 +20,14 @@ export default function BestSearch() {
 
     const [load, setLoad] = React.useState<boolean>(false);
 
-    React.useEffect(() => {
-        console.log(answers);
-    }, [answers])
-
     const changeInput = (e: React.SyntheticEvent) => changeInputRecursive(e, answers, setAnswers);
 
     const handleSubmit = async (e: SyntheticEvent) => {
         setLoad(true);
         e.preventDefault();
 
-        await axios.post('http://192.168.0.114:3040/api/best', { ...answers })
+        await axios.post('https://me-ajuda-ai.herokuapp.com/api/best', { ...answers })
             .then(res => {
-                console.log(res.data.msg);
-
                 if (res.data.msg) {
                     document.location.href = `/best-search/result/${res.data.msg}`
                     setLoad(false);

@@ -17,13 +17,13 @@ export default function ListProviders() {
     React.useEffect(() => {
         const getClientExists = async () => {
             if (search.text) {
-                axios.get(`http://192.168.0.114:3040/api/provider?provider=${search.text}`).then((res) => {
+                axios.get(`https://me-ajuda-ai.herokuapp.com/api/provider?provider=${search.text}`).then((res) => {
                     if (res.data) {
                         setProviders(res.data);
                     }
                 });
             } else {
-                axios.get(`http://192.168.0.114:3040/api/provider/`).then((res) => {
+                axios.get(`https://me-ajuda-ai.herokuapp.com/api/provider`).then((res) => {
                     if (res.data) {
                         setProviders(res.data);
                     }

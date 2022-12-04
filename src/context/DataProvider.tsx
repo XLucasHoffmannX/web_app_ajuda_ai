@@ -17,8 +17,6 @@ export default function DataProvider({ children }: any) {
 		}
 
 		setToken(localStorage.getItem('meajuda'));
-
-		console.log(token);
 	}, [token])
 
 	const state = {

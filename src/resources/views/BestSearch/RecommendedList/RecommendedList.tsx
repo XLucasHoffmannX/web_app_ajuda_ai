@@ -12,7 +12,6 @@ export default function RecommendedList() {
     const result: ResultExpected | any = Result(type);
     const linkUse: string | any = ResultLinks(type);
 
-    console.log(result);
     return (
         <Wrapper title='Melhor equipamento'>
             <div className='best_search_box'>

@@ -22,10 +22,9 @@ export default function Satisfaction() {
 
 	React.useEffect(() => {
 		const getClientExists = async () => {
-			await axios.post("http://192.168.0.114:3040/api/getclient", {
+			await axios.post("https://me-ajuda-ai.herokuapp.com/api/getclient", {
 				client_id: token
 			}).then((res) => {
-				console.log(res.data);
 				if (res.data === 'true') {
 					setLock(true);
 				} else {
